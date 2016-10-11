@@ -1,0 +1,48 @@
+.m-menu {
+  background-color: rgba(1, 0, 88, 0.72);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tabs {
+    display: flex;
+    transition: ease 1s;
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+
+    &.up {
+      transform: translateY(-150px);
+    }
+
+    &.bot {
+      transform: translateY(150px);
+    }
+
+    .tab {
+      width: 33%;
+      margin: 20px;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+
+
+  .c-tabs {
+    .tab {
+      display: none;
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
