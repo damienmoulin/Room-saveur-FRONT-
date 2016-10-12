@@ -1,7 +1,6 @@
 // Reset
 @import '../../../node_modules/normalize.scss/normalize';
 
-
 //vendor
 @import "vendor/animate.scss";
 @import 'vendor/bootstrap-theme.min.scss';
@@ -16,13 +15,11 @@
 @import 'base/media';
 @import "base/zIndex";
 
-
 //components
 @import "components/home";
 @import "components/menu";
 @import "components/footer";
 @import "components/donut";
-
 
 // Pages bo
 @import "pages/bo";
