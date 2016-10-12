@@ -11,6 +11,7 @@
   .chart{
     display: inline-block;
     position: relative;
+    top: 30px;
   }
   .easyPieChart {
     position: relative;
@@ -60,7 +61,6 @@
 
   p{
     margin: 0;
-    padding: 20px;
     color: lighten(#a1a7a6, 15%);
     a{
       color: inherit;
