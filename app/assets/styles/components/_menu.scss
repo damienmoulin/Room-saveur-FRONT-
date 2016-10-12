@@ -64,17 +64,20 @@
       transition: ease .4s;
       height: 85px;
       display: flex;
-      justify-content: center;
       align-items: center;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.8rem;
       border: 1px solid #cdcdcd;
       border-left: 0px;
       border-top: 0px;
-
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 25px;
+      box-sizing: border-box;
 
       &.active {
         background-color: $color1-lighter;
+        font-weight: bold;
       }
     }
 
