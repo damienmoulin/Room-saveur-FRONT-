@@ -3,36 +3,33 @@
 var initMenu = function () {
     console.log('init menu');
 
-    $('.c-menu-left').on('mouseenter', function (e) {
+    $('.tab-menu.first').on('click', function (e) {
         e.preventDefault();
 
         width = $('.cl').width();
-
         $('.tabs').addClass('up'); //animation
 
-        $('.cr').removeClass('hidden').addClass('visible fadeInLeft');
-        $('.cr').css('left',width);
-        $('.main-container').css('padding-left',width + 166);
+        if($('.cr').hasClass('visible')){
+            $('.tab-menu.first .zmdi').addClass('zmdi-menu').removeClass('zmdi-close');
+
+            $('.cr').removeClass('visible fadeInLeft').addClass('fadeOutRigth');
+            $('.cr').css('left', '-160px');
+            $('.main-container').css('padding-left', 0 );
+
+            setTimeout(function(){
+                $('.cr').addClass('hidden');
+            }, 800);
+        }else{
+
+            $('.tab-menu.first .zmdi').removeClass('zmdi-menu').addClass('zmdi-close');
+
+            $('.cr').removeClass('hidden').addClass('visible fadeInLeft');
+            $('.cr').css('left',width);
+            $('.main-container').css('padding-left',width + 166);
+        }
 
     })
 
-    $('.c-menu-left').on('mouseleave', function (e) {
-        e.preventDefault();
-
-        console.log('ici');
-        width = $('.cl').width();
-
-        $('.tabs').addClass('up'); //animation
-
-        $('.cr').removeClass('visible fadeInLeft').addClass('fadeOutRigth');
-        $('.cr').css('left', '-160px');
-        $('.main-container').css('padding-left', 0 );
-
-        setTimeout(function(){
-            $('.cr').addClass('hidden');
-        }, 500);
-
-    })
 }
 
 
