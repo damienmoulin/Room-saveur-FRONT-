@@ -7,9 +7,9 @@ $gray-dusty:               #c8c8c8;
 $gray-cloud:               #f5f6f4;
 
 
-$color1:                    #bdc3c7;            // Red
+$color1:                    #ef257e;            // Rose
 $color1-light:              lighten( $color1, 20% );
-$color1-lighter:            lighten( $color1, 35% );
+$color1-lighter:            lighten( $color1, 42% );
 $color1-dark:               darken( $color1, 10% );
 
 
@@ -40,6 +40,7 @@ $body-color:                #000;
 $popin:                 'Poppins', sans-serif;
 $openSans:             'Open Sans', sans-serif;
 
+$baseFont: $popin;
 
 // Base
 $border-radius-base:        5px;
