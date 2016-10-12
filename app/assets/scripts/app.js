@@ -36,8 +36,30 @@ var initMenu = function () {
 }
 
 
-var closeMenu = function () {
+var initDonut = function() {
+    /**
+     * Built with the jQuery plugin that was born as a result of the great dribble shot
+     * http://rendro.github.io/easy-pie-chart/
+     **/
 
+    function color(percent) {
+        var color = '#F44336';
+
+        if (percent > 50) {
+            color = '#8bc34a'; //green
+        } else {
+            color = '#F44336'; //red
+        }
+        return color;
+    }
+
+    $('.percentage').easyPieChart({
+        animate: 1000,
+        lineWidth: 15,
+        scaleColor: false,
+        size: 124,
+        barColor: color
+    });
 }
 
 
@@ -45,8 +67,9 @@ $(document).ready(function(){
 
     console.log('ok');
 
-    if($('.menu-left').length > 0 ){
+    if($('.menu-left').length > 0 ) {
         initMenu();
     }
 
+    initDonut()
 });
