@@ -24,7 +24,9 @@ module.exports = {
                 appSrc + '/assets/scripts/bootstrap.min.js',
                 appSrc + '/assets/scripts/angular.easypiechart.min.js',
                 appSrc + '/assets/scripts/jquery.easypiechart.min.js',
-                appSrc + '/assets/scripts/easypiechart.min.js'
+                appSrc + '/assets/scripts/easypiechart.min.js',
+                appSrc + '/assets/scripts/chartist.min.js',
+                appSrc + '/assets/scripts/chartist-plugin-pointlabels.min.js'
                 ],
     dest: appDest + '/js/',
     modernizrOpts: {

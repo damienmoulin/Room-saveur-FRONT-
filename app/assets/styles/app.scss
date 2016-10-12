@@ -7,6 +7,7 @@
 @import 'vendor/bootstrap.min.scss';
 @import "vendor/material-design-iconic-font.min.scss";
 @import "vendor/font-awesome.min.css";
+@import "vendor/chartist.scss";
 
 
 //base
@@ -22,9 +23,11 @@
 @import "components/menu";
 @import "components/footer";
 @import "components/donut";
+@import "components/graph";
+
 
 // Pages bo
 @import "pages/bo";
 @import "pages/catalog";
-
+@import "pages/stat";
 
