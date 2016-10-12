@@ -6,9 +6,14 @@
 		height: 300px;
 	}
 
-	.list-room, a.btn-add-product{
+	.list-room, 
+	a.btn-add-product{
 		display: inline-block;
 		margin-top: 30px;
+	}
+
+	a.btn-add-product {
+		cursor: pointer;
 	}
 
 	.list-room{
