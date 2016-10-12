@@ -4,12 +4,9 @@
 
 //vendor
 @import "vendor/animate.scss";
-
-
-//bootstrap
-
-@import 'bootstrap/bootstrap-theme.min.scss';
-@import 'bootstrap/bootstrap.min.scss';
+@import 'vendor/bootstrap-theme.min.scss';
+@import 'vendor/bootstrap.min.scss';
+@import "vendor/material-design-iconic-font.min.scss";
 
 //base
 @import 'base/variables';
