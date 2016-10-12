@@ -51,25 +51,28 @@ i.zmdi.zmdi-account {
   transition: ease .5s;
 }
 
-button#dLabel {
-  background-color: transparent;
-  border: none;
-  color: white;
-  outline: none;
-  transition: ease .5s;
+.home{
+  button#dLabel {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    transition: ease .5s;
 
-  &:hover {
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  button#dLabel:hover i.zmdi.zmdi-account {
     color: $pink;
   }
-}
 
-button#dLabel:hover i.zmdi.zmdi-account {
-  color: $pink;
-}
-
-ul.dropdown-menu {
-  border-radius: 0;
-  text-align: center;
+  ul.dropdown-menu {
+    border-radius: 0;
+    text-align: center;
+  }
+  
 }
 
 .container-l, .container-r {

@@ -1,0 +1,129 @@
+.dropdown.dropdown-stocks{
+
+	button#dLabel {
+    border: 1px solid $dark-grey;
+    border-radius: 25px;
+    padding: 5px 20px;
+    color: $dark-grey;
+    font-size: 2.4rem;
+	}
+
+	.caret {
+    border-top: 8px dashed;
+    border-top: 8px solid\9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+	}
+
+}
+
+.dropdown.dropdown-stocks,
+.content-white.content-stocks a.btn-add-product{
+	display: inline-block;
+}
+
+.content-white.content-stocks{
+
+	.bs-example{
+		margin-top: 50px;
+	}
+
+	thead {
+	  border-top: 1px solid $dark-grey;
+
+	  tr th{
+			color: $color1;
+			font-size: 2rem;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+	}
+
+	tbody{
+		font-size: 1.6rem;
+		color: $dark-grey;
+
+		th{
+			font-size: 1.6rem;
+		}
+	}
+
+	.table-striped > tbody > tr:nth-of-type(odd) {
+	  background-color: $table;
+	}
+
+	.table > tbody > tr > th, 
+	.table > tfoot > tr > td, 
+	.table > tbody > tr > td,
+	.table > tfoot > tr > th, 
+	.table > thead > tr > td, 
+	.table > thead > tr > th {
+	  border-top: 1px solid $dark-grey;
+	  padding: 17px 0px;
+	  padding-left: 20px;
+	}
+
+}
+
+.modal-header h4{
+	color: $color1;
+  font-size: 2.4rem;
+  margin-left: 20px;
+}
+
+.modal-rooms{
+
+	form{
+		padding: 30px 50px;
+		.form-group.cdp{
+			display: inline-block;
+			width: 49%;
+		}
+		.form-group.town{
+			width: 49%;
+			display: inline-block;
+			float: right;
+		}
+	}
+
+	.line{
+		width: 100%;
+		height: 1px;
+		background-color: $light-grey-order;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	label {
+    font-weight: 400;
+    color: $label;
+	}
+
+	.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+	}
+}
+
+.modal-footer a.add-modale {
+  text-decoration: none;
+  background-color: $color1;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 30px;
+  font-size: 2.4rem;
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+
+  &:hover{
+ 		background-color: $pink;
+  }
+}
+
+
+
+
+
