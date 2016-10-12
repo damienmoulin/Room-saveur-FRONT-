@@ -88,4 +88,13 @@
 
 .main-container {
   transition: cubic-bezier(0.24, 0.9, 0.85, 0.99) .9s;
+  position: relative;
+  left: 0px;
 }
+
+
+body.noscrollx {
+  overflow-x: hidden;
+  width:100vw;
+}
+

@@ -14,7 +14,8 @@ var initMenu = function () {
 
             $('.cr').removeClass('visible fadeInLeft').addClass('fadeOutRigth');
             $('.cr').css('left', '-160px');
-            $('.main-container').css('padding-left', 0 );
+            $('.main-container').css('left', 0 );
+            $('body').removeClass('noscrollx');
 
             setTimeout(function(){
                 $('.cr').addClass('hidden');
@@ -25,7 +26,9 @@ var initMenu = function () {
 
             $('.cr').removeClass('hidden').addClass('visible fadeInLeft');
             $('.cr').css('left',width);
-            $('.main-container').css('padding-left',width + 166);
+            $('.main-container').css('left',width + 166);
+
+            $('body').addClass('noscrollx');
         }
 
     })
