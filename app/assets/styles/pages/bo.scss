@@ -342,6 +342,98 @@ td .number-order {
 }
 
 
+.plateau {
+  position: relative;
+
+  .tray {
+    color: white;
+    text-align: center;
+    margin-top: 55px;
+
+    p {
+      font-size: 8rem;
+      color: white;
+      font-weight: 600;
+      line-height: 80px;
+    }
+
+    span {
+      font-size: 5.3rem;
+      font-weight: 300;
+    }
+
+  }
+
+  .t1 {
+    position: absolute;
+    left: 101px;
+    text-align: left;
+    margin-top: 25px;
+
+    .zmdi {
+
+      &:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        display: block;
+        position: absolute;
+        top: 16px;
+        left: 11px;
+        z-index: 1;
+      }
+
+      &:before {
+        position: relative;
+        z-index: 2;
+      }
+
+      float: right;
+      color: #8ec549;
+      font-size: 6rem;
+      top: 13px;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+
+  .t2 {
+    position: absolute;
+    left: 451px;
+    text-align: left;
+    top: 11px;
+
+    .zmdi {
+
+      &:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        display: block;
+        position: absolute;
+        top: 16px;
+        left: 11px;
+        z-index: 1;
+      }
+
+      &:before {
+        position: relative;
+        z-index: 2;
+      }
+
+      float: right;
+      color: #0584a4;
+      font-size: 6rem;
+      top: 13px;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}
+
+
 
 
 
