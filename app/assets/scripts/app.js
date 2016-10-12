@@ -12,7 +12,7 @@ var initMenu = function () {
 
         $('.cr').removeClass('hidden').addClass('visible fadeInLeft');
         $('.cr').css('left',width);
-        $('.main-container').css('padding-left',width + 136);
+        $('.main-container').css('padding-left',width + 166);
 
     })
 

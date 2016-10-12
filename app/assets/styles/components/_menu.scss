@@ -1,14 +1,16 @@
 .menu-left {
   height: 100vh;
-  position: relative;
-
+  position: fixed;
+  z-index: 3;
+  width: 85px;
+  top:0;
+  left: 0;
 
   .cl {
     height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-around;
     background-color: #fff;
     z-index: 2;
     position: relative;
@@ -17,7 +19,7 @@
   .tab-menu {
     color: #000;
     transition: ease .4s;
-    height: calc( 100%/9 );
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
