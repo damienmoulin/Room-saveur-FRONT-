@@ -6,6 +6,11 @@
 @import "vendor/animate.scss";
 
 
+//bootstrap
+
+@import 'bootstrap/bootstrap-theme.min.scss';
+@import 'bootstrap/bootstrap.min.scss';
+
 //base
 @import 'base/variables';
 @import 'base/mixins';
@@ -21,4 +26,7 @@
 @import "components/menu";
 @import "components/footer";
 
+
+// Pages bo
+@import "pages/bo";
 
