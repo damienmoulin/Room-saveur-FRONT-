@@ -1,16 +1,16 @@
 //  TITLE PAGE
 
-.title-page{
-	padding-bottom: 20px;
+.title-page {
+  padding-bottom: 20px;
 
-	p{
-		color: white;
-		font-size: 2.6rem;
-		display: inline-block;
-		margin: 0;
-	}
+  p {
+    color: white;
+    font-size: 2.6rem;
+    display: inline-block;
+    margin: 0;
+  }
 
-	.form-control {
+  .form-control {
     background-color: transparent;
     border: 0;
     border-radius: 0;
@@ -18,25 +18,25 @@
     border-bottom: 1px solid white;
     padding: 0;
     width: 300px;
-	}
+  }
 
-	::-webkit-input-placeholder {
-	   color: white;
-	}
+  ::-webkit-input-placeholder {
+    color: white;
+  }
 
-	:-moz-placeholder { /* Firefox 18- */
-	   color: white;  
-	}
+  :-moz-placeholder { /* Firefox 18- */
+    color: white;
+  }
 
-	::-moz-placeholder {  /* Firefox 19+ */
-	   color: white;  
-	}
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+  }
 
-	:-ms-input-placeholder {  
-	   color: white;  
-	}
+  :-ms-input-placeholder {
+    color: white;
+  }
 
-	.btn-default {
+  .btn-default {
     color: #333;
     background-color: transparent;
     border-color: transparent;
@@ -52,35 +52,35 @@
     outline: none;
     &:hover,
     &:active,
-    &:focus{
-    	color: $color1;
-    	transition: ease 0.4s;
-    	background-color: transparent;
-   		outline: none;
-   		border: 1px solid transparent;
-    	border-bottom: 1px solid white;
+    &:focus {
+      color: $color1;
+      transition: ease 0.4s;
+      background-color: transparent;
+      outline: none;
+      border: 1px solid transparent;
+      border-bottom: 1px solid white;
     }
-	}
+  }
 
-	input.form-control {
+  input.form-control {
     color: white;
-	}
+  }
 
-	form.navbar-form.navbar-right {
+  form.navbar-form.navbar-right {
     margin: 0;
-	}
+  }
 
 }
 
 // CONTENT
 
-.content-white{
-	background-color: white;
-	border-radius: 5px;
-	padding: 40px 80px;
+.content-white {
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px 80px;
 
-	a.btn-add-product{
-		text-decoration: none;
+  a.btn-add-product {
+    text-decoration: none;
     background-color: #00a9a0;
     color: white;
     border-radius: 30px;
@@ -91,126 +91,129 @@
     width: initial;
     position: absolute;
     right: 7%;
+    transition: ease .6s;
 
-    &:hover{
-    	background-color: $pink;
+    &:hover {
+      background-color: $pink;
     }
-	}
+  }
 
-	.first-content-menu{
-		margin-top: 100px;
-	}
-	
-	.content-menu{
-		border: 1px solid #dadada;
-		border-radius: 5px 5px 0 0;
-		margin-bottom: 30px;
+  .first-content-menu {
+    margin-top: 100px;
+  }
 
-		.type-menu{
-			display: inline-block;
+  .content-menu {
+    border: 1px solid #dadada;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 30px;
 
-			img {
-		    border-radius: 4px 0 0 0;
-			}
+    .type-menu {
+      display: inline-block;
 
-			p{
-				font-size: 2.2rem;
-				color: $color1;
-				margin-left: 15px;
-				margin-top: 10px;
-			}
+      img {
+        border-radius: 4px 0 0 0;
+      }
 
-			ul{
-				padding: 0;
-				margin-left: 15px;
-				color: $grey-order;
+      p {
+        font-size: 2.2rem;
+        color: $color1;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
 
-				li{
-					list-style: none;
-					display: inline-block;
-					margin-bottom: 5px;
+      ul {
+        padding: 0;
+        margin-left: 15px;
+        color: $grey-order;
 
-					&:after{
-						content: '|'; 
-						margin-left: 10px;
-    				margin-right: 10px;
-					}
+        li {
+          list-style: none;
+          display: inline-block;
+          margin-bottom: 5px;
 
-					&:last-child:after{
-						content: ' '; 
-						display: none;
-					}
-				}
-			}
-		}
+          &:after {
+            content: '|';
+            margin-left: 10px;
+            margin-right: 10px;
+          }
 
-		.infos-menu{
-			display: inline-block;
-			width: 50%;
-    	vertical-align: top;
-			margin-left: 15px;
+          &:last-child:after {
+            content: ' ';
+            display: none;
+          }
+        }
+      }
+    }
 
-    	p{
-    		font-size: 2.2rem;
-				color: $color1;
-				margin-top: 10px;
-    	}
+    .infos-menu {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      margin-left: 15px;
 
-    	.description{
-    		font-size: 1.4rem;
-    	}
-		}
+      p {
+        font-size: 2.2rem;
+        color: $color1;
+        margin-top: 10px;
+      }
 
-		.price{
-			display: inline-block;
-			width: 100px;
-			height: 100px;
-			background-color: $pink;
-			color: white;
-			text-align: center;
-			vertical-align: top;
-    	float: right;
-    	border-radius: 0 4px 0 0;
-			p{
-				font-size: 3rem;
-				line-height: 20px;
-    		margin-top: 30px;
-			}
+      .description {
+        font-size: 1.4rem;
+      }
+    }
 
-			span{
-				font-size: 1.6rem;
-				
-			}
-		}
+    .price {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: $pink;
+      color: white;
+      text-align: center;
+      vertical-align: top;
+      float: right;
+      border-radius: 0 4px 0 0;
 
-		.btn-edit{
-			background-color: $dark-grey;
-    	height: 40px;
-    	padding: 7px 15px;
-			a{
-				text-transform: uppercase;
-				text-decoration: none;
-				color: white;
-				font-size: 1.8rem;
+      p {
+        font-size: 3rem;
+        line-height: 20px;
+        margin-top: 30px;
+      }
 
-				&:hover{
-					color: $grey-order;
-				}
+      span {
+        font-size: 1.6rem;
 
-				&:after{
-					content: '|'; 
-					margin-left: 10px;
-  				margin-right: 10px;
-				}
+      }
+    }
 
-				i{
-					margin-right: 10px;
-					font-size: 20px;
-				}
-			}
-		}
-	}
+    .btn-edit {
+      background-color: $dark-grey;
+      height: 40px;
+      padding: 7px 15px;
 
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        transition: ease .6s;
+
+        &:hover {
+          color: $gray-dusty;
+        }
+
+        &:after {
+          content: '|';
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        i {
+          margin-right: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 
 }
 
