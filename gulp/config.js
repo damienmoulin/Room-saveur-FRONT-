@@ -19,8 +19,9 @@ module.exports = {
   },
 
   scripts: {
-    src: [appSrc + 'assets/scripts/bootstrap.min.js', appSrc + '/assets/scripts/app.js'],
-    vendorSrc: [ './bower_components/jquery/dist/jquery.min.js'],
+    src: appSrc + '/assets/scripts/app.js',
+    vendorSrc: ['./bower_components/jquery/dist/jquery.min.js', 
+                appSrc + '/assets/scripts/bootstrap.min.js'],
     dest: appDest + '/js/',
     modernizrOpts: {
       cache: true,
