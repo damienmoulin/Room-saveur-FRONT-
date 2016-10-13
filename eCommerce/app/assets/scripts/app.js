@@ -107,6 +107,41 @@ var initNot = function () {
 
 }
 
+var initTabsChange = function() {
+    $('.btn-modale-cont').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 'slow');
+
+        $('div.modale-body.modale-invit > ul > li:nth-child(3) > a').trigger('click');
+    })
+
+    $('.btn-meeting .valider').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 'slow');
+
+        $('div.modale-body.modale-invit > ul > li:nth-child(5) > a').trigger('click');
+
+        
+    })
+
+    $('.paiement-modale').on('click', function () {
+       $('.paiement').html('');
+        $('.nav-tabs').html('');
+
+        $('.intro-modale h4').html('Merci pour votre commande');
+        $('.intro-modale p').html('Nous vous souhaitons une bonne dégustation');
+        $('.intro-modale').css('padding','150px');
+        $('.intro-modale').append('<img class="img-b-val" src="img/skin/bottom-img-validate.png" alt="">');
+        $('.modale-invit img').addClass('validate');
+
+        $('.modal-header').on('click', function(){
+            document.location.href= '/';
+        })
+    });
+}
+
 $(document).ready(function () {
 
     console.log('ok');
@@ -137,5 +172,9 @@ $(document).ready(function () {
 
     if ($('.notifications').length > 0) {
         initNot();
+    }
+
+    if($('.contenu').length > 0) {
+        initTabsChange();
     }
 });

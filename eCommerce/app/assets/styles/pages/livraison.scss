@@ -57,9 +57,14 @@
     float: right;
     margin-top: 50px;
 
-    &:hover{
-    background-color: $color1;
+    transition: ease .4s;
+    border: 1px solid $pink;
+    box-sizing: border-box;
 
+    &:hover {
+      background-color: transparent;
+      border-color: $pink;
+      color: $pink;
     }
   }
 
@@ -101,12 +106,22 @@
     padding-top: 10px;
   }
 
+  td {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000000;
+  }
+
   .total{
     float: right;
+    width: 260px;
+
     p{
       display: inline-block;
+      font-family: $dinMedium;
       font-size: 2rem;
-      color: black;
+      font-weight: 300;
+      color: #000000;
     }
 
     span{
@@ -119,7 +134,7 @@
   }
 
   .form-price{
-    width: 70%;
+    width: 71%;
     display: inline-block;
 
     label {
@@ -151,9 +166,16 @@
     text-align: center;
     padding: 20px;
     margin-top: 80px;
+    position: relative;
+    left: -78px;
 
-    &:hover{
-      background-color: $color1;
+    transition: ease .4s;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: black;
+      border-color: black;
+      color: #fff;
     }
   }
 
@@ -161,6 +183,7 @@
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: right;
+    width: 91%;
 
     a.modifier{
       text-transform: uppercase;
@@ -169,9 +192,18 @@
       text-align: center;
       padding: 20px;
       color: black;
+      position: relative;
+      top: -2px;
+      margin-right: 19px;
 
-      &:hover{
-        background-color: $color1;
+
+      transition: ease .4s;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: black;
+        border-color: black;
+        color: #fff;
       }
     }
 
@@ -190,17 +222,84 @@
       width: 260px;
       height: 58px;
       vertical-align: inherit;
+      transition: ease .4s;
+      border: 1px solid #ef257e;
+      box-sizing: border-box;
 
-      &:hover{
-        background-color: $color1;
+      &:hover {
+        background-color: transparent;
+        border-color: #ef257e;
+        color: #ef257e;
       }
     }
   }
+
+
 }
 
 
 .paiement{
   padding: 20px 350px;
+
+  .check-span {
+    font-size: 2.0rem;
+    font-weight: 300;
+    color: #000000;
+    padding-left: 17px;
+
+    input {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border-radius: 0px;
+      -webkit-appearance: none;
+      border: 1px solid #000;
+    }
+
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative; /* permet de positionner les pseudo-éléments */
+      padding-left: 17px; /* fait un peu d'espace pour notre case à venir */
+      cursor: pointer; /* affiche un curseur adapté */
+    }
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: -17px;
+      top: -16px;
+      width: 22px;
+      height: 22px; /* dim. de la case */
+      border: 1px solid #000;
+      background: #ffffff;
+    }
+    /* Aspect général de la coche */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      content: '\2713'; //attention à ce caractère//
+      position: absolute;
+      top: -18px;
+      left: -12px;
+      font-size: 15px;
+      color: #000;
+      transition: all .2s; /* on prévoit une animation */
+    }
+    /* Aspect si "pas cochée" */
+    [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0; /* coche invisible */
+      transform: scale(0); /* mise à l'échelle à 0 */
+    }
+    /* Aspect si "cochée" */
+    [type="checkbox"]:checked + label:after {
+      opacity: 1; /* coche opaque */
+      transform: scale(1); /* mise à l'échelle 1:1 */
+    }
+  }
 
   .choose{
     font-size: 2rem;
@@ -294,9 +393,19 @@ float: right;
 }
 
 
+body .modale-body img.img-b-val {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  position: relative;
+  top: -10px;
+}
 
-
-
+.modale-invit img.validate {
+  position: relative;
+  top: 243px;
+  left: 53px;
+}
 
 
 

@@ -51,7 +51,6 @@
 		text-decoration: none;
 		background-color: $pink;
 		color: white;
-		margin-top: 43px;
 		display: block;
 		width: 260px;
 		height: 50px;
@@ -61,8 +60,14 @@
 		margin: 0 auto;
 		margin-top: 70px;
 
-		&:hover{
-			background-color: $color1;
+		transition: ease .4s;
+		border: 1px solid $pink;
+		box-sizing: border-box;
+
+		&:hover {
+			background-color: transparent;
+			border-color: $pink;
+			color: $pink;
 		}
 	}
 
@@ -117,9 +122,11 @@
     margin-top: 50px;
     padding-top: 26px;
 
-    &:hover{
-    	background-color: $color1;
-    }
+	    &:hover{
+	    	border: 1px solid $pink;
+	    	color: $pink;
+	    	background-color: transparent;
+	    }
 	}
 }
 
