@@ -84,6 +84,29 @@ var initPanier = function () {
 
 }
 
+var initNot = function () {
+
+    $('.icon-notif').on('click', function () {
+        $('.notifications').removeClass('hide');
+        $('.c-panier').addClass('animated fadeInRight');
+
+        $('.notifications').off('click').on('click', function(e) {
+
+            if($(e.target).hasClass('notifications')){
+                $('.c-panier').removeClass('fadeInRight').addClass('fadeOutRight');
+
+                setTimeout(function(){
+                    $('.notifications').addClass('hide');
+                    $('.c-panier').removeClass('fadeOutRight');
+                }, 800);
+            }else{
+                return false;
+            }
+        });
+    });
+
+}
+
 $(document).ready(function () {
 
     console.log('ok');
@@ -112,4 +135,7 @@ $(document).ready(function () {
         initPanier();
     }
 
+    if ($('.notifications').length > 0) {
+        initNot();
+    }
 });
