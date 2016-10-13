@@ -1,0 +1,259 @@
+.compte {
+  .contain {
+    width: 1182px;
+    margin: 0 auto;
+    padding-top: 62px;
+    display: block;
+  }
+
+  .c-title {
+    margin-top:66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      flex: 1;
+      align-items: center;
+      flex-direction: inherit;
+      justify-content: flex-end;
+    }
+
+    h2 {
+      font-family: $helloMissThang;
+      font-size: 4.0rem;
+      color: #000000;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      margin-top: 0px;
+    }
+  }
+
+  .c-btn {
+
+    &.mt {
+      margin-top: 40px;
+      text-align: right;
+      padding-bottom: 40px;
+
+      button:first-child {
+        margin-right: 20px;
+      }
+    }
+
+    a, button {
+      background-color: #fff;
+      border: solid 1px #000;
+      color: #000;
+      text-transform: uppercase;
+      border-radius: 0px;
+      text-align: center;
+      display: inline-block;
+      padding: 10px 15px;
+      height: 49px;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: ease .4s;
+      font-family: $dinMedium;
+      line-height: 40px;
+
+      &:hover {
+        text-decoration: none;
+        border-color: #000;
+        color: #fff;
+        background-color: #000;
+      }
+
+      &.green {
+        border: solid 1px $color1;
+        color: #fff;
+        background-color: $color1;
+
+        &:hover {
+          text-decoration: none;
+          border-color: $color1;
+          color: $color1;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .choice-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: $dinMedium;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 21px;
+
+    &:after {
+      content: '• • •';
+      color: $color3;
+      margin-left: 15px;
+    }
+  }
+
+
+  .nav-tabs {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .nav-tabs > li {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    float: inherit;
+  }
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus,
+  .nav-tabs > li.active > a:hover {
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+    color: $color1;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 5px solid $color1;
+  }
+
+  .modale-invit .nav-tabs {
+    border-bottom: none;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    transition: color ease .4s;
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: $color1;
+    }
+  }
+
+  .choice-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: $dinMedium;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 0px;
+
+    &:after {
+      content: '• • •';
+      color: $color3;
+      margin-left: 15px;
+    }
+  }
+
+  .c-tab {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  label{
+    color: black;
+    font-size: 2.2rem;
+    text-align: left;
+    margin-top: 70px;
+  }
+
+  input {
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+    outline: none;
+    font-size: 2.2rem;
+  }
+
+  .flex-al {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .split {
+      width: 48%;
+    }
+  }
+
+  .nostyle {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .check-span {
+    font-size: 2.0rem;
+    font-weight: 300;
+    color: #000000;
+    padding-left: 17px;
+
+    input {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border-radius: 0px;
+      -webkit-appearance: none;
+      border: 1px solid #000;
+    }
+
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative; /* permet de positionner les pseudo-éléments */
+      padding-left: 17px; /* fait un peu d'espace pour notre case à venir */
+      cursor: pointer; /* affiche un curseur adapté */
+    }
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: -17px;
+      top: -20px;
+      width: 22px;
+      height: 22px; /* dim. de la case */
+      border: 1px solid #000;
+      background: #ffffff;
+    }
+    /* Aspect général de la coche */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      content: '\2713'; //attention à ce caractère//
+      position: absolute;
+      top: -18px;
+      left: -12px;
+      font-size: 15px;
+      color: #000;
+      transition: all .2s; /* on prévoit une animation */
+    }
+    /* Aspect si "pas cochée" */
+    [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0; /* coche invisible */
+      transform: scale(0); /* mise à l'échelle à 0 */
+    }
+    /* Aspect si "cochée" */
+    [type="checkbox"]:checked + label:after {
+      opacity: 1; /* coche opaque */
+      transform: scale(1); /* mise à l'échelle 1:1 */
+    }
+  }
+}

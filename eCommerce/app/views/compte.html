@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<!-- build:include include/head.html -->
+<!-- /build -->
+<body class="menu-sticky">
+
+<!-- build:include include/header.html -->
+<!-- /build -->
+
+<!-- PAGE -->
+
+<div class="main-container compte">
+    <div class="contain">
+        <br>
+
+        <div class="c-title">
+            <div class="text">
+                <h2>Mon compte</h2>
+            </div>
+
+            <div class="c-btn">
+                <a href="#" class="btn1 black-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Aide</a>
+            </div>
+        </div>
+
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#GENERAL" aria-controls="GENERAL" role="tab"
+                                                      data-toggle="tab">Infos générales</a></li>
+            <li role="presentation"><a href="#POINTSAVEURS" aria-controls="POINTSAVEURS" role="tab" data-toggle="tab">Points
+                saveurs</a></li>
+            <li role="presentation"><a href="#EQUIPE" aria-controls="EQUIPE" role="tab" data-toggle="tab">Équipe</a>
+            </li>
+            <li role="presentation"><a href="#PAIEMENT" aria-controls="PAIEMENT" role="tab" data-toggle="tab">MOYENS DE
+                PAIEMENT</a></li>
+            <li role="presentation"><a href="#HISTORIQUE" aria-controls="HISTORIQUE" role="tab" data-toggle="tab">HISTORIQUE</a>
+            </li>
+            <li role="presentation"><a href="#PARRAINAGE" aria-controls="PARRAINAGE" role="tab" data-toggle="tab">PARRAINAGE</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- /// -->
+            <div role="tabpanel" class="tab-pane active" id="GENERAL">
+                <div class="tabs-general c-tab">
+
+                    <h4 class="choice-title">Présentation</h4>
+
+                    <form action="#">
+
+                        <div class="">
+                            <label>Adresse(s) email(s)</label>
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <div class="flex-al">
+                            <div class="split">
+                                <label>Votre nom <sup>*</sup></label>
+                                <input type="text" placeholder="Nom">
+                            </div>
+
+                            <div class="split">
+                                <label>Votre prénom <sup>*</sup></label>
+                                <input type="text" placeholder="prénom">
+                            </div>
+
+                            <div class="split">
+                                <label>Numéro fixe</label>
+                                <input type="number" placeholder="01 ... ">
+                            </div>
+
+                            <div class="split">
+                                <label>Numéro portbale</label>
+                                <input type="number" placeholder="06 ...">
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label>Société</label>
+                            <input type="text" placeholder="Société">
+                        </div>
+
+                        <div class="c-btn mt">
+                            <button>Annuler</button>
+                            <button type="submit" class="green">Enregistrer</button>
+                        </div>
+
+                        <h4 class="choice-title">Adresse de livraison</h4>
+                        <span class="check-span"><input type="checkbox" id="different"><label class="nostyle" for="different"></label>Si l’adresse de facturation est différente, cocher la case</span>
+
+                        <div class="flex-al">
+                            <div class="split">
+                                <label>Votre nom <sup>*</sup></label>
+                                <input type="text" placeholder="Nom">
+                            </div>
+
+                            <div class="split">
+                                <label>Votre prénom <sup>*</sup></label>
+                                <input type="text" placeholder="prénom">
+                            </div>
+
+                        </div>
+
+                        <div class="">
+                            <label>Nom et numéro de la voie</label>
+                            <input type="text" placeholder="nom et n°">
+                        </div>
+
+                        <div class="split">
+                            <label>Code postal<sup>*</sup></label>
+                            <input type="text" placeholder="750..">
+                        </div>
+
+                        <div class="">
+                            <label>Informations complémentaires/personne à demander</label>
+                            <input type="text" placeholder="Étage, code d'entré, ...">
+                        </div>
+
+
+                        <div class="c-btn mt">
+                            <button>Annuler</button>
+                            <button type="submit" class="green">Enregistrer</button>
+                        </div>
+
+                        <div class="facturation hide">
+                            <h4 class="choice-title">Adresse de facturation</h4>
+
+                            <div class="flex-al">
+                                <div class="split">
+                                    <label>Votre nom <sup>*</sup></label>
+                                    <input type="text" placeholder="Nom">
+                                </div>
+
+                                <div class="split">
+                                    <label>Votre prénom <sup>*</sup></label>
+                                    <input type="text" placeholder="prénom">
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <label>Nom et numéro de la voie</label>
+                                <input type="text" placeholder="nom et n°">
+                            </div>
+
+                            <div class="split">
+                                <label>Code postal<sup>*</sup></label>
+                                <input type="text" placeholder="750..">
+                            </div>
+
+                            <div class="">
+                                <label>Informations complémentaires/personne à demander</label>
+                                <input type="text" placeholder="Étage, code d'entré, ...">
+                            </div>
+
+
+                            <div class="c-btn mt">
+                                <button>Annuler</button>
+                                <button type="submit" class="green">Enregistrer</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+            <!-- /// -->
+            <div role="tabpanel" class="tab-pane" id="POINTSAVEURS">
+                <div class="tabs-pointsaveurs c-tab">
+
+                </div>
+            </div>
+            <!-- /// -->
+            <div role="tabpanel" class="tab-pane" id="EQUIPE">
+                <div class="tabs-equipe c-tab">
+
+                </div>
+            </div>
+            <!-- /// -->
+            <div role="tabpanel" class="tab-pane" id="PAIEMENT">
+                <div class="tabs-paiement c-tab">
+
+                </div>
+            </div>
+            <!-- /// -->
+            <div role="tabpanel" class="tab-pane" id="HISTORIQUE">
+
+                <div class="tabs-historique c-tab">
+
+                </div>
+            </div>
+            <!-- /// -->
+            <div role="tabpanel" class="tab-pane" id="PARRAINAGE">
+
+                <div class="tabs-parrainage c-tab">
+
+                </div>
+            </div>
+            <!-- /// -->
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ******** MODALE INVITATION ******** -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg-lg" role="document">
+        <div class="modal-content modale-invit-tabs">
+            <!-- /// -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- /// -->
+            <div class="modale-body modale-invit">
+                <!-- /// -->
+                <img src="img/logo-noir.png" alt="logo">
+                <div class="intro-modale">
+                    <h4>Invitez vos collègues</h4>
+                    <p>Ceci est mon paragraphe pour expliquer le principe</p>
+                </div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#COLLÈGUES" aria-controls="COLLÈGUES" role="tab"
+                                                              data-toggle="tab">COLLÈGUES</a></li>
+                    <li role="presentation"><a href="#URL" aria-controls="URL" role="tab" data-toggle="tab">URL</a></li>
+                    <li role="presentation"><a href="#EMAIL" aria-controls="EMAIL" role="tab"
+                                               data-toggle="tab">EMAIL</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- /// -->
+                    <div role="tabpanel" class="tab-pane active" id="COLLÈGUES">
+                        <div class="tabs-collegues">
+
+                            <p>Selectionnez les collègues qui mangent avec vous :</p>
+
+                            <ul>
+                                <li>
+                                    <label>
+                                        <div class="name">Mélanie <strong>GANJON</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <div class="name">Mélanie <strong>GANJON</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <div class="name">Mélanie <strong>GANJON</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <!-- //// -->
+
+                                <li>
+                                    <label>
+                                        <div class="name">Fabrice <strong>CORPO</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <div class="name">Fabrice <strong>CORPO</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <div class="name">Fabrice <strong>CORPO</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <!-- //// -->
+
+                                <li>
+                                    <label>
+                                        <div class="name">Nancy <strong>BARREAU</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <div class="name">Nancy <strong>BARREAU</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <div class="name">Nancy <strong>BARREAU</strong></div>
+                                        <input type="checkbox">
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn-commande">LANCER LA PRISE DE COMMANDE</a>
+
+                        </div>
+                    </div>
+                    <!-- /// -->
+                    <div role="tabpanel" class="tab-pane" id="URL">
+                        <div class="tabs-url">
+                            <p>Partagez le lien ci-dessous avant de lancer une session de commande</p>
+
+                            <a class="link" href="#">https://room.sa/1hebf5c</a>
+
+                            <a class="copier" href="">COPIER</a>
+
+                            <div class="share">Partagez le lien ci-dessous avant de lancer une session de commande</div>
+
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/slack.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/skype.svg" alt=""></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- /// -->
+                    <div role="tabpanel" class="tab-pane" id="EMAIL">
+                        <div class="tabs-email">
+                            <p>Partagez le lien ci-dessous avant de lancer une session de commande</p>
+                            <label>Adresse(s) email(s)</label>
+                            <input type="email" placeholder="Email">
+                            <a href="#" class="btn-invit">ENVOYER LES INVITATIONS</a>
+                        </div>
+                    </div>
+                    <!-- /// -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ******** MODALE INVITATION ******** -->
+<div class="modal fade bs-example-modale-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg-lg" role="document">
+        <div class="modal-content modale-invit-tabs modale-contenu">
+            <!-- /// -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- /// -->
+            <div class="modale-body modale-invit">
+                <!-- /// -->
+                <img src="img/logo-noir.png" alt="logo">
+                <div class="intro-modale">
+                    <h4>Invitez vos collègues</h4>
+                    <p>Ceci est mon paragraphe pour expliquer le principe</p>
+                </div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#LIVRAISON" aria-controls="LIVRAISON" role="tab" data-toggle="tab"><span>1</span>LIVRAISON</a>
+                    </li>
+
+                    <li class="deco">• • •</li>
+
+                    <li role="presentation">
+                        <a href="#RÉCAPITULATIF" aria-controls="RÉCAPITULATIF" role="tab"
+                           data-toggle="tab"><span>2</span>RÉCAPITULATIF</a>
+                    </li>
+
+                    <li class="deco">• • •</li>
+
+                    <li role="presentation">
+                        <a href="#PAIEMENT" aria-controls="PAIEMENT" role="tab" data-toggle="tab"><span>3</span>PAIEMENT</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- /// -->
+                    <div role="tabpanel" class="tab-pane active" id="LIVRAISON">
+                        <div class="tabs-email">
+                            <div class="form-content name">
+                                <label>Votre nom</label>
+                                <input type="email" placeholder="">
+                            </div>
+
+                            <div class="form-content nickname">
+                                <label>Votre prénom</label>
+                                <input type="email" placeholder="">
+                            </div>
+
+                            <label>Nom et numéro de la voie</label>
+                            <input type="email" placeholder="">
+
+                            <label>Informations complémentaires/personne à demander</label>
+                            <input type="email" placeholder="">
+
+                            <div class="form-content name">
+                                <label>Code</label>
+                                <input type="email" placeholder="">
+                            </div>
+
+                            <div class="form-content nickname">
+                                <label>Ville </label>
+                                <input type="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /// -->
+                    <div role="tabpanel" class="tab-pane" id="RÉCAPITULATIF">
+
+                    </div>
+                    <!-- /// -->
+                    <div role="tabpanel" class="tab-pane" id="PAIEMENT">
+
+                    </div>
+                    <!-- /// -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- build:include include/footer.html -->
+<!-- /build -->
+
+</body>
+</html>
