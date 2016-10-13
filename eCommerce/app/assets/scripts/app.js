@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     console.log('ok');
 
-    if ($('.btn-act').length > 0) {
+    if ($('.btn-act').length > 0) { 
         initMore();
     }
 
