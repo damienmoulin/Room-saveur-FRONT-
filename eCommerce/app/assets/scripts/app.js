@@ -51,11 +51,21 @@ var initMenuScroll = function() {
     });
 }
 
+var initTabAccount = function () {
+    $('.check-span label').on('click', function(){
+        if($('.check-span input[type="checkbox"]').is(':checked')) {
+            $('.facturation').addClass('hide');
+        }else{
+            $('.facturation').removeClass('hide');
+        }
+    })
+}
+
 $(document).ready(function () {
 
     console.log('ok');
 
-    if ($('.btn-act').length > 0) { 
+    if ($('.btn-act').length > 0) {
         initMore();
     }
 
@@ -65,10 +75,14 @@ $(document).ready(function () {
 
     $('.arrow').on('click', function(){
 
-        var position = $('.service')[0].offsetTop - 130;
+        var position = $('.service')[0].offsetTop - 80;
         $('html, body').animate({
             scrollTop: position
         }, 'slow');
     });
+    
+    if($('.compte').length > 0){
+        initTabAccount();
+    }
 
 });
