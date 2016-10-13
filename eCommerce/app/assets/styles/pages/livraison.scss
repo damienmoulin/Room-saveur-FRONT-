@@ -117,6 +117,85 @@
       margin-left: 15px;
     }
   }
+
+  .form-price{
+    width: 70%;
+    display: inline-block;
+
+    label {
+      color: black;
+      font-size: 2rem;
+      text-align: left;
+      margin-top: 70px;
+    }
+
+    input {
+      border: 0;
+      box-shadow: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      border-radius: 0;
+      margin: 0 auto;
+      outline: none;
+      font-size: 2.2rem;
+    }
+  }
+
+  a.apply{
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+
+    &:hover{
+      background-color: $color1;
+    }
+  }
+
+  .btn-meeting{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: right;
+
+    a.modifier{
+      text-transform: uppercase;
+      border: 1px solid black;
+      text-decoration: none;
+      text-align: center;
+      padding: 20px;
+      color: black;
+
+      &:hover{
+        background-color: $color1;
+      }
+    }
+
+    a.valider{
+      text-transform: uppercase;
+      font-family: "dinMedium";
+      background-color: #ef257e;
+      text-decoration: none;
+      transition: ease .4s;
+      text-align: center;
+      padding-top: 25px;
+      margin-top: 50px;
+      display: inline-block;
+      outline: none;
+      color: white;
+      width: 260px;
+      height: 58px;
+      vertical-align: inherit;
+
+      &:hover{
+        background-color: $color1;
+      }
+    }
+  }
 }
 
 
@@ -182,6 +261,10 @@
       font-size: 2.2rem;
     }
   }
+
+  .compte .c-btn.mt{
+    float: right;
+  }
 }
 
 .form-content.full {
@@ -193,6 +276,22 @@
 }
 
 
+a.paiement-modale{
+float: right;
+  text-transform: uppercase;
+  font-family: "dinMedium";
+  background-color: #ef257e;
+  text-decoration: none;
+  transition: ease .4s;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 50px;
+  outline: none;
+  color: white;
+  display: block;
+  width: 260px;
+  height: 58px;
+}
 
 
 
