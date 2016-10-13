@@ -120,8 +120,77 @@
 }
 
 
+.paiement{
+  padding: 20px 350px;
 
+  .choose{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+  }
 
+  .one{
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 30px;
+    color: black;
+  }
+
+  input[type=checkbox], input[type=radio] {
+    margin: 5px 0 0;
+    height: 20px;
+    width: 17px;
+    padding: 9px;
+  }
+
+  a.btn-paiement-r {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ef257e;
+    color: white;
+    display: block;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    font-family: "dinMedium";
+    padding-top: 21px;
+    outline: none;
+    transition: ease .4s;
+    float: right;
+    margin-top: 50px;
+  }
+
+  .form-content {
+    width: 48%;
+    display: inline-block;
+
+    label {
+      color: black;
+      font-size: 2.2rem;
+      text-align: left;
+      margin-top: 70px;
+    }
+
+    input {
+      border: 0;
+      box-shadow: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      border-radius: 0;
+      margin: 0 auto;
+      outline: none;
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.form-content.full {
+  width: 600px;
+}
+
+.form-content.right {
+  float: right;
+}
 
 
 
