@@ -122,9 +122,11 @@
     margin-top: 50px;
     padding-top: 26px;
 
-    &:hover{
-    	background-color: $color1;
-    }
+	    &:hover{
+	    	border: 1px solid $pink;
+	    	color: $pink;
+	    	background-color: transparent;
+	    }
 	}
 }
 

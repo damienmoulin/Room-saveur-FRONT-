@@ -122,6 +122,8 @@ var initTabsChange = function() {
         }, 'slow');
 
         $('div.modale-body.modale-invit > ul > li:nth-child(5) > a').trigger('click');
+
+        
     })
 
     $('.paiement-modale').on('click', function () {
