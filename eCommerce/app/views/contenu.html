@@ -23,7 +23,7 @@
         </div>
 
         <div class="c-btn">
-          <a href="#" class="btn1">J'invite mes collègues</a>
+          <a href="#" class="btn1" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">J'invite mes collègues</a>
         </div>
       </div>
 
@@ -202,8 +202,11 @@
 
       <div class="c-btns">
         <div class="btns">
-          <a href="#" class="btn1 commande">Je passe commande</a>
-          <a href="#" class="btn1">J'invite mes collègues</a>
+
+          <a href="#" class="btn1 commande" type="button" data-toggle="modal" data-target=".bs-example-modale-2">Je passe commande</a>
+
+
+          <a href="#" class="btn1" type="button" data-toggle="modal" data-target=".bs-example-modal-lg" >J'invite mes collègues</a>
         </div>
       </div>
 
@@ -360,7 +363,7 @@
   <!-- ******** MODALE INVITATION ******** -->
   <div class="modal fade bs-example-modale-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg-lg" role="document">
-      <div class="modal-content modale-invit-tabs">
+      <div class="modal-content modale-invit-tabs modale-contenu">
         <!-- /// -->
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -377,15 +380,53 @@
           </div>
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#LIVRAISON" aria-controls="LIVRAISON" role="tab" data-toggle="tab">LIVRAISON</a></li>
-            <li role="presentation"><a href="#RÉCAPITULATIF" aria-controls="RÉCAPITULATIF" role="tab" data-toggle="tab">RÉCAPITULATIF</a></li>
-            <li role="presentation"><a href="#PAIEMENT" aria-controls="PAIEMENT" role="tab" data-toggle="tab">PAIEMENT</a></li>
+            <li role="presentation" class="active">
+              <a href="#LIVRAISON" aria-controls="LIVRAISON" role="tab" data-toggle="tab"><span>1</span>LIVRAISON</a>
+            </li>
+
+            <li class="deco">• • •</li>
+
+            <li role="presentation">
+              <a href="#RÉCAPITULATIF" aria-controls="RÉCAPITULATIF" role="tab" data-toggle="tab"><span>2</span>RÉCAPITULATIF</a>
+            </li>
+
+            <li class="deco">• • •</li>
+
+            <li role="presentation">
+              <a href="#PAIEMENT" aria-controls="PAIEMENT" role="tab" data-toggle="tab"><span>3</span>PAIEMENT</a>
+            </li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
             <!-- /// -->
             <div role="tabpanel" class="tab-pane active" id="LIVRAISON">
+              <div class="tabs-email">
+                <div class="form-content name">
+                  <label>Votre nom</label>
+                  <input type="email" placeholder="">
+                </div>
 
+                <div class="form-content nickname">
+                  <label>Votre prénom</label>
+                  <input type="email" placeholder="">
+                </div>
+
+                  <label>Nom et numéro de la voie</label>
+                  <input type="email" placeholder="">
+
+                  <label>Informations complémentaires/personne à demander</label>
+                  <input type="email" placeholder="">
+
+                 <div class="form-content name">
+                  <label>Code</label>
+                  <input type="email" placeholder="">
+                </div>
+
+                <div class="form-content nickname">
+                  <label>Ville </label>
+                  <input type="email" placeholder="">
+                </div>
+              </div>
             </div>
             <!-- /// -->
             <div role="tabpanel" class="tab-pane" id="RÉCAPITULATIF">
@@ -404,9 +445,6 @@
       </div>
     </div>
   </div>
-
-  <!-- build:include include/footer.html -->
-  <!-- /build -->
 
   <!-- build:include include/footer.html -->
   <!-- /build -->
