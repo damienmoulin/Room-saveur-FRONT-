@@ -4,6 +4,36 @@
   left: 0;
   width: 100vw;
 
+  .menu-sticky & {
+    background-color: #000000;
+    z-index: 3;
+
+    .c-head {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      width: 1182px;
+      margin: 0 auto;
+
+      .logo {
+        margin: 0px;
+      }
+
+      .nav-head {
+        margin: 0px;
+        flex: 1;
+        align-items: center;
+        flex-direction: inherit;
+        justify-content: flex-end;
+      }
+    }
+
+    .icon-panier {
+      margin-right: 0px;
+    }
+
+  }
+
 
   .logo {
     width: 123.3px;
@@ -14,7 +44,7 @@
   }
 
   .mon-compte {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
@@ -22,7 +52,7 @@
     position: relative;
     top: 9px;
     margin-right: 20px;
-    transition: ease .6s;
+    transition: ease .4s;
 
     &:hover {
       text-decoration: none;
@@ -55,7 +85,7 @@
     align-items: center;
 
     a {
-      transition: ease .6s;
+      transition: ease .4s;
 
       &:hover {
         text-decoration: none;
