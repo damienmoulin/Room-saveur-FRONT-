@@ -1,5 +1,9 @@
 .head {
-  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
 
   .logo {
     width: 123.3px;
@@ -13,6 +17,51 @@
     font-size: 22px;
     font-weight: 500;
     color: #ffffff;
+    text-transform: uppercase;
+    font-family: $dinMedium;
+    position: relative;
+    top: 9px;
+    margin-right: 20px;
+    transition: ease .6s;
+
+    &:hover {
+      text-decoration: none;
+      color: $color1;
+    }
+
+    &:after {
+      content: '';
+      width: 2px;
+      height: 20px;
+      border: solid 1px #ffffff;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  a {
+    color: #fff;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+  }
+
+  .nav-head {
+    float: right;
+    margin-top: 49px;
+    margin-right: 48px;
+    display: flex;
+    align-items: center;
+
+    a {
+      transition: ease .6s;
+
+      &:hover {
+        text-decoration: none;
+        color: $color1;
+      }
+    }
   }
 }
 
