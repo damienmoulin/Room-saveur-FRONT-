@@ -1,63 +1,63 @@
-.modal-lg-lg{
-	width: 100%;
-	margin: 0;
+.modal-lg-lg {
+  width: 100%;
+  margin: 0;
 }
 
-.modale-invit-tabs{
-	padding: 20px 50px;
+.modale-invit-tabs {
+  padding: 20px 50px;
 
-	.modal-header {
+  .modal-header {
     padding: 0;
-    border-bottom:none;
-	}
+    border-bottom: none;
+  }
 
-	button.close {
+  button.close {
     font-size: 50px;
     font-weight: 100;
     color: black;
     margin: 0;
-	}
+  }
 }
 
-.modale-invit{
-	img{
-		display: inline-block;
-		width: 104.8px;
-  	height: 97.7px;
-	}
+.modale-invit {
+  img {
+    display: inline-block;
+    width: 104.8px;
+    height: 97.7px;
+  }
 
-	.intro-modale{
-		display: inline-block;
-		margin-left: 50px;
+  .intro-modale {
+    display: inline-block;
+    margin-left: 50px;
     vertical-align: -webkit-baseline-middle;
 
-		h4{
-			font-size: 4rem;
-			color: black;
-			font-family: $helloMissThang;
-		}
+    h4 {
+      font-size: 4rem;
+      color: black;
+      font-family: $helloMissThang;
+    }
 
-		p{
-			font-size: 2.4rem;
-			font-family: $dinLight;
-		}
-	}
+    p {
+      font-size: 2.4rem;
+      font-family: $dinLight;
+    }
+  }
 
-	.nav-tabs {
+  .nav-tabs {
     text-align: center;
     margin-top: 50px;
-	}
+  }
 
-	.nav-tabs > li {
+  .nav-tabs > li {
     margin: 0 auto;
     text-align: center;
     display: inline-block;
     float: inherit;
-	}
+  }
 
-	.nav-tabs > li.active > a, 
-	.nav-tabs > li.active > a:focus, 
-	.nav-tabs > li.active > a:hover {
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus,
+  .nav-tabs > li.active > a:hover {
     color: black;
     cursor: default;
     background-color: transparent;
@@ -70,197 +70,208 @@
     border-bottom: 5px solid $color1;
   }
 
-	.modale-invit .nav-tabs {
+  .modale-invit .nav-tabs {
     border-bottom: none;
     margin: 0 auto;
     width: 400px;
-	}
+  }
 
-	.nav-tabs > li > a {
+  .nav-tabs > li > a {
     font-size: 2.2rem;
     text-transform: uppercase;
     color: black;
 
-		&:focus, 
-		&:hover {
-	    background-color: transparent;
-    	border-color: transparent;
-		}
-	}	
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
 
-	.tab-content{
+  .tab-content {
 
-		.tabs-collegues{
-			padding: 70px 200px;
+    .tabs-collegues {
+      padding: 70px 200px;
 
-			p{
-				color: black;
-				text-align: center;
-				font-family: $dinLight;
-				font-size: 2.2rem;
-			}
+      p {
+        color: black;
+        text-align: center;
+        font-family: $dinLight;
+        font-size: 2.2rem;
+      }
 
-			ul{
-				padding: 0;
-				margin-top: 50px;
+      ul {
+        padding: 0;
+        margin-top: 50px;
 
-				li{
-					list-style: none;
-					display: inline-block;
-					margin: 0px 67px;
+        li {
+          list-style: none;
+          display: inline-block;
+          margin: 0px 67px;
 
-					label{
-    				font-weight: 400;
+          label {
+            font-weight: 400;
 
-    				.name{
-    					display: inline-block;
-    					width: 120px;
-    				}
-						
-						input[type=checkbox]{
-    					display: inline-block;
-    					margin: 15px 0 0;
-    					width: 40px;
-    					height: 16px;
-    					outline: none;
-						}
-					}
-				}
-			}
+            .name {
+              display: inline-block;
+              width: 120px;
+            }
 
-			a.btn-commande{
-		    text-transform: uppercase;
-		    text-decoration: none;
-		    background-color: #ef257e;
-		    color: white;
-		    margin-top: 43px;
-		    display: block;
-		    width: 260px;
-		    height: 50px;
-		    text-align: center;
-		    font-family: "dinMedium";
-		    padding-top: 21px;
-		    margin: 0 auto;
-    		margin-top: 70px;
+            input[type=checkbox] {
+              display: inline-block;
+              margin: 15px 0 0;
+              width: 40px;
+              height: 16px;
+              outline: none;
+            }
+          }
+        }
+      }
 
-    		&:hover{
-    			background-color: $color1;
-    		}
-			}
-		}
+      a.btn-commande {
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #ef257e;
+        color: white;
+        display: block;
+        width: 260px;
+        height: 50px;
+        text-align: center;
+        font-family: "dinMedium";
+        padding-top: 21px;
+        margin: 0 auto;
+        margin-top: 70px;
 
-		.tabs-url{
-			font-family: $dinLight;
-			padding: 70px 200px;
-			text-align: center;
+        transition: ease .4s;
+        border: 1px solid #ef257e;
+        box-sizing: border-box;
 
-			p{
-				color: black;
-				font-size: 2.2rem;
-			}
+        &:hover {
+          background-color: transparent;
+          border-color: #ef257e;
+          color: #ef257e;
+        }
 
-			a.link{
-				display: inline-block;
-				text-decoration: none;
-		    color: black;
-		    font-size: 2.2rem;
-		    padding-bottom: 20px;
-		    border-bottom: 1px solid black;
-		    margin-bottom: 100px;
-		    height: 34px;
-		    margin-right: 30px;
+      }
+    }
 
-				&:hover{
-					color: $color1;
-				}
-			}
+      .tabs-url {
+        font-family: $dinLight;
+        padding: 70px 200px;
+        text-align: center;
 
-			a.copier{
-				display: inline-block;
-				border: 1px solid black;
-				text-decoration: none;
-				color: black;
-				text-align: center;
-		    padding: 15px 20px;
-				padding-top: 25px;
+        p {
+          color: black;
+          font-size: 2.2rem;
+        }
 
-				&:hover{
-					border: 1px solid $color1;
-					color: $color1;
-				}
-			}
+        a.link {
+          display: inline-block;
+          text-decoration: none;
+          color: black;
+          font-size: 2.2rem;
+          padding-bottom: 20px;
+          border-bottom: 1px solid black;
+          margin-bottom: 100px;
+          height: 34px;
+          margin-right: 30px;
 
-			.share{
-				color: black;
-				font-size: 2.2rem;
-			}
+          &:hover {
+            color: $color1;
+          }
+        }
 
-			ul{
-				padding: 0;
-				margin-top: 10px;
-				li{
-					display: inline-block;
-					a{
-						border: none;
-						img{
-							width: 50px;
-    					margin-left: 20px;
-						}
-					}
-				}
-			}
-		}
+        a.copier {
+          display: inline-block;
+          border: 1px solid black;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+          padding: 15px 20px;
+          padding-top: 25px;
 
-		.tabs-email{
-			font-family: $dinLight;
-			padding: 70px 310px;
+          &:hover {
+            border: 1px solid $color1;
+            color: $color1;
+          }
+        }
 
-			p{
-				color: black;
-				font-size: 2.2rem;
-				text-align: center;
-			}
+        .share {
+          color: black;
+          font-size: 2.2rem;
+        }
 
-			label{
-				color: black;
-				font-size: 2.2rem;
-				text-align: left;
-				margin-top: 70px;
-			}
+        ul {
+          padding: 0;
+          margin-top: 10px;
+          li {
+            display: inline-block;
+            a {
+              border: none;
+              img {
+                width: 50px;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
 
-			input {
-		    border: 0;
-		    box-shadow: none;
-		    border-bottom: 1px solid black;
-		    width: 100%;
-		    border-radius: 0;
-		 	  margin: 0 auto;
-		 	  outline: none;
-		 	  font-size: 2.2rem;
-			}
+      .tabs-email {
+        font-family: $dinLight;
+        padding: 70px 310px;
 
-			.btn-invit{
-		    text-transform: uppercase;
-		    text-decoration: none;
-		    background-color: $pink;
-		    color: white;
-		    margin-top: 43px;
-		    display: block;
-		    width: 260px;
-		    height: 50px;
-		    text-align: center;
-		    font-family: "dinMedium";
-		    padding-top: 21px;
-		    margin: 0 auto;
-		    margin-top: 70px;
+        p {
+          color: black;
+          font-size: 2.2rem;
+          text-align: center;
+        }
 
-		    &:hover{
-		    	background-color: $color1;
-		    }
-			}
-		}
-	}
-}
+        label {
+          color: black;
+          font-size: 2.2rem;
+          text-align: left;
+          margin-top: 70px;
+        }
+
+        input {
+          border: 0;
+          box-shadow: none;
+          border-bottom: 1px solid black;
+          width: 100%;
+          border-radius: 0;
+          margin: 0 auto;
+          outline: none;
+          font-size: 2.2rem;
+        }
+
+        .btn-invit {
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: $pink;
+          color: white;
+          display: block;
+          width: 260px;
+          height: 50px;
+          text-align: center;
+          font-family: "dinMedium";
+          padding-top: 21px;
+          margin: 0 auto;
+          margin-top: 70px;
+
+          transition: ease .4s;
+          border: 1px solid $pink;
+          box-sizing: border-box;
+
+          &:hover {
+            background-color: transparent;
+            border-color: $pink;
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
 
 
 
