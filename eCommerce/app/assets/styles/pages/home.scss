@@ -27,6 +27,7 @@
 	  text-align: center;
 	  font-family: $dinMedium;
 	  padding-top: 21px;
+	  outline: none;
 
 	  &:hover{
 	  	background-color: $color1;
@@ -36,7 +37,7 @@
 	.home-e-commerce{
 		background: url(../img/bck-e-commerce.png);
 		width: 100%;
-		height: 660px;
+		height: 695px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: white;
