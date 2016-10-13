@@ -132,7 +132,7 @@ var initTabsChange = function() {
 
         $('.intro-modale h4').html('Merci pour votre commande');
         $('.intro-modale p').html('Nous vous souhaitons une bonne dégustation');
-        $('.intro-modale').css('padding','150px');
+        $('.intro-modale').css('padding','80px');
         $('.intro-modale').append('<img class="img-b-val" src="img/skin/bottom-img-validate.png" alt="">');
         $('.modale-invit img').addClass('validate');
 
