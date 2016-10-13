@@ -92,6 +92,7 @@
     position: absolute;
     right: 7%;
     transition: ease .6s;
+    cursor: pointer;
 
     &:hover {
       background-color: $pink;
