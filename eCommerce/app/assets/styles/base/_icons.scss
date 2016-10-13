@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "icons";
+  src: url('../fonts/icons.eot');
+  src: url('../fonts/icons.eot?#iefix') format('eot'),
+       url('../fonts/icons.woff') format('woff'),
+       url('../fonts/icons.ttf') format('truetype'),
+       url('../fonts/icons.svg#icons') format('svg');
+}
+
+%icon {
+  position: relative;
+  display:inline-block;
+  vertical-align: middle;
+  font-family:"icons";
+  font-style:normal;
+  font-weight:normal;
+  line-height:1;
+  speak:none;
+  text-decoration:inherit;
+  text-transform:none;
+}
+
+@function icon-char($filename) {
+  $char: "";
+
+  @if $filename == arrow {
+    $char: "\E001";
+  }
+  @if $filename == calendar {
+    $char: "\E002";
+  }
+  @if $filename == facebook {
+    $char: "\E003";
+  }
+  @if $filename == localisation {
+    $char: "\E004";
+  }
+  @if $filename == mail {
+    $char: "\E005";
+  }
+  @if $filename == marker {
+    $char: "\E006";
+  }
+  @if $filename == message {
+    $char: "\E007";
+  }
+  @if $filename == notification {
+    $char: "\E008";
+  }
+  @if $filename == pencil {
+    $char: "\E009";
+  }
+  @if $filename == person {
+    $char: "\E00A";
+  }
+  @if $filename == power {
+    $char: "\E00B";
+  }
+  @if $filename == search {
+    $char: "\E00C";
+  }
+  @if $filename == settings {
+    $char: "\E00D";
+  }
+  @if $filename == star {
+    $char: "\E00E";
+  }
+  @if $filename == transport {
+    $char: "\E00F";
+  }
+  @if $filename == twitter {
+    $char: "\E010";
+  }
+
+  @return $char;
+}
+
+@mixin icon($filename) {
+  content: icon-char($filename);
+}
+
+[class*="icon-"] {
+  @extend %icon;
+}
+
+
+.icon-arrow{
+  &::before {
+    @include icon(arrow);
+  }
+}
+%icon-arrow {
+  @include icon(arrow);
+}
+
+.icon-calendar{
+  &::before {
+    @include icon(calendar);
+  }
+}
+%icon-calendar {
+  @include icon(calendar);
+}
+
+.icon-facebook{
+  &::before {
+    @include icon(facebook);
+  }
+}
+%icon-facebook {
+  @include icon(facebook);
+}
+
+.icon-localisation{
+  &::before {
+    @include icon(localisation);
+  }
+}
+%icon-localisation {
+  @include icon(localisation);
+}
+
+.icon-mail{
+  &::before {
+    @include icon(mail);
+  }
+}
+%icon-mail {
+  @include icon(mail);
+}
+
+.icon-marker{
+  &::before {
+    @include icon(marker);
+  }
+}
+%icon-marker {
+  @include icon(marker);
+}
+
+.icon-message{
+  &::before {
+    @include icon(message);
+  }
+}
+%icon-message {
+  @include icon(message);
+}
+
+.icon-notification{
+  &::before {
+    @include icon(notification);
+  }
+}
+%icon-notification {
+  @include icon(notification);
+}
+
+.icon-pencil{
+  &::before {
+    @include icon(pencil);
+  }
+}
+%icon-pencil {
+  @include icon(pencil);
+}
+
+.icon-person{
+  &::before {
+    @include icon(person);
+  }
+}
+%icon-person {
+  @include icon(person);
+}
+
+.icon-power{
+  &::before {
+    @include icon(power);
+  }
+}
+%icon-power {
+  @include icon(power);
+}
+
+.icon-search{
+  &::before {
+    @include icon(search);
+  }
+}
+%icon-search {
+  @include icon(search);
+}
+
+.icon-settings{
+  &::before {
+    @include icon(settings);
+  }
+}
+%icon-settings {
+  @include icon(settings);
+}
+
+.icon-star{
+  &::before {
+    @include icon(star);
+  }
+}
+%icon-star {
+  @include icon(star);
+}
+
+.icon-transport{
+  &::before {
+    @include icon(transport);
+  }
+}
+%icon-transport {
+  @include icon(transport);
+}
+
+.icon-twitter{
+  &::before {
+    @include icon(twitter);
+  }
+}
+%icon-twitter {
+  @include icon(twitter);
+}

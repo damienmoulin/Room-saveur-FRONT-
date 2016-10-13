@@ -4,6 +4,13 @@ build/
 # GruntJS Task
 node_modules/
 
+# Build data
+BO/build/
+
+# GruntJS Task
+BO/node_modules/
+BO/bower_components/
+
 #OS junk files
 # Exclude generated files
 

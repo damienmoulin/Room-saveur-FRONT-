@@ -1,0 +1,99 @@
+.m-donut{
+
+  body {
+    font: 12px/1.4 sans-serif;
+    color: #263238;
+    background: #e0e3db;
+  }
+  .panel{
+
+  }
+  .chart{
+    display: inline-block;
+    position: relative;
+    top: 30px;
+  }
+  .easyPieChart {
+    position: relative;
+    text-align: center;
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .percentage,
+  .label {
+    text-align: center;
+    font-weight: 100;
+  }
+  .percentage{
+    font-size: 31px;
+  }
+  sup{
+    top: -11px;
+    margin-left: 1px;
+    font-size: 14px;
+    position: relative;
+  }
+  .ctrl{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #c4cdcc;
+    word-spacing: 5px;
+    span{
+      cursor: pointer;
+      transition : color .5s ease-in-out;
+
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+
+  .meta{
+    margin: auto;
+    max-width: 280px;
+    border-top: 1px solid rgba(155,155,155,0.2);
+    text-align: center;
+  }
+
+  p{
+    margin: 0;
+    color: lighten(#a1a7a6, 15%);
+    a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    +p{
+      padding-top: 5px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .c-donut {
+
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .number-donut {
+    position: absolute;
+    top: 29%;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #515974;
+  }
+
+  h3 {
+    color: #0584a4;
+  }
+}
