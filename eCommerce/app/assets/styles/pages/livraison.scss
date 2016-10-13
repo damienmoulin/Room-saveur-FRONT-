@@ -18,4 +18,125 @@
     float: right;
   }
 
+  .select-time{
+    margin-top: 100px;
+    .time-delevery{
+      display: inline-block;
+      font-weight: 600;
+      font-size: 2.2rem;
+    }
+
+    select{
+      display: inline-block;
+      width: 210px;
+      font-family: arial;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid black;
+      box-shadow: none;
+      color: $color1;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
+  }
+
+  a.btn-modale-cont{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $pink;
+    color: white;
+    display: block;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    font-family: "dinMedium";
+    padding-top: 21px;
+    outline: none;
+    transition: ease .4s;
+    float: right;
+    margin-top: 50px;
+
+    &:hover{
+    background-color: $color1;
+
+    }
+  }
+
 }
+
+.recapitualif{
+  padding: 20px 350px;
+
+  p{
+    font-weight: 500;
+    color: black;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  img{
+    width: 60px;
+    height: 62.3px;
+  }
+
+  .table > tbody > tr > td, 
+  .table > tbody > tr > th, 
+  .table > tfoot > tr > td, 
+  .table > tfoot > tr > th, 
+  .table > thead > tr > td, 
+  .table > thead > tr > th {
+    vertical-align: initial;
+    padding-right: 40px;
+  }
+
+  .recapitualif .table > tbody > tr > td, 
+  .recapitualif .table > tbody > tr > th, 
+  .recapitualif .table > tfoot > tr > td, 
+  .recapitualif .table > tfoot > tr > th, 
+  .recapitualif .table > thead > tr > td, 
+  .recapitualif .table > thead > tr > th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .total{
+    float: right;
+    p{
+      display: inline-block;
+      font-size: 2rem;
+      color: black;
+    }
+
+    span{
+      font-size: 2.8rem;
+      color: $pink;
+      font-weight: 500;
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
