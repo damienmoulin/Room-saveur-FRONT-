@@ -1,0 +1,419 @@
+.modale-contenu{
+  .modale-invit .nav-tabs > li a span{
+    display: block;
+  }
+
+  li.deco{
+    color: #000000;
+    font-size: 24px;
+    margin: 0 20px;
+  }
+
+  .form-content{
+    width: 48%;
+    display: inline-block
+  }
+
+  .nickname{
+    float: right;
+  }
+
+  .select-time{
+    margin-top: 100px;
+    .time-delevery{
+      display: inline-block;
+      font-weight: 600;
+      font-size: 2.2rem;
+    }
+
+    select{
+      display: inline-block;
+      width: 210px;
+      font-family: arial;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid black;
+      box-shadow: none;
+      color: $color1;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
+  }
+
+  a.btn-modale-cont{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $pink;
+    color: white;
+    display: block;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    font-family: "dinMedium";
+    padding-top: 21px;
+    outline: none;
+    transition: ease .4s;
+    float: right;
+    margin-top: 50px;
+
+    transition: ease .4s;
+    border: 1px solid $pink;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $pink;
+      color: $pink;
+    }
+  }
+
+}
+
+.recapitualif{
+  padding: 20px 350px;
+
+  p{
+    font-weight: 500;
+    color: black;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  img{
+    width: 60px;
+    height: 62.3px;
+  }
+
+  .table > tbody > tr > td, 
+  .table > tbody > tr > th, 
+  .table > tfoot > tr > td, 
+  .table > tfoot > tr > th, 
+  .table > thead > tr > td, 
+  .table > thead > tr > th {
+    vertical-align: initial;
+    padding-right: 40px;
+  }
+
+  .recapitualif .table > tbody > tr > td, 
+  .recapitualif .table > tbody > tr > th, 
+  .recapitualif .table > tfoot > tr > td, 
+  .recapitualif .table > tfoot > tr > th, 
+  .recapitualif .table > thead > tr > td, 
+  .recapitualif .table > thead > tr > th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  td {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000000;
+  }
+
+  .total{
+    float: right;
+    width: 260px;
+
+    p{
+      display: inline-block;
+      font-family: $dinMedium;
+      font-size: 2rem;
+      font-weight: 300;
+      color: #000000;
+    }
+
+    span{
+      font-size: 2.8rem;
+      color: $pink;
+      font-weight: 500;
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+
+  .form-price{
+    width: 71%;
+    display: inline-block;
+
+    label {
+      color: black;
+      font-size: 2rem;
+      text-align: left;
+      margin-top: 70px;
+    }
+
+    input {
+      border: 0;
+      box-shadow: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      border-radius: 0;
+      margin: 0 auto;
+      outline: none;
+      font-size: 2.2rem;
+    }
+  }
+
+  a.apply{
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    position: relative;
+    left: -78px;
+
+    transition: ease .4s;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: black;
+      border-color: black;
+      color: #fff;
+    }
+  }
+
+  .btn-meeting{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: right;
+    width: 91%;
+
+    a.modifier{
+      text-transform: uppercase;
+      border: 1px solid black;
+      text-decoration: none;
+      text-align: center;
+      padding: 20px;
+      color: black;
+      position: relative;
+      top: -2px;
+      margin-right: 19px;
+
+
+      transition: ease .4s;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: black;
+        border-color: black;
+        color: #fff;
+      }
+    }
+
+    a.valider{
+      text-transform: uppercase;
+      font-family: "dinMedium";
+      background-color: #ef257e;
+      text-decoration: none;
+      transition: ease .4s;
+      text-align: center;
+      padding-top: 25px;
+      margin-top: 50px;
+      display: inline-block;
+      outline: none;
+      color: white;
+      width: 260px;
+      height: 58px;
+      vertical-align: inherit;
+      transition: ease .4s;
+      border: 1px solid #ef257e;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: transparent;
+        border-color: #ef257e;
+        color: #ef257e;
+      }
+    }
+  }
+
+
+}
+
+
+.paiement{
+  padding: 20px 350px;
+
+  .check-span {
+    font-size: 2.0rem;
+    font-weight: 300;
+    color: #000000;
+    padding-left: 17px;
+
+    input {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border-radius: 0px;
+      -webkit-appearance: none;
+      border: 1px solid #000;
+    }
+
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative; /* permet de positionner les pseudo-éléments */
+      padding-left: 17px; /* fait un peu d'espace pour notre case à venir */
+      cursor: pointer; /* affiche un curseur adapté */
+    }
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: -17px;
+      top: -16px;
+      width: 22px;
+      height: 22px; /* dim. de la case */
+      border: 1px solid #000;
+      background: #ffffff;
+    }
+    /* Aspect général de la coche */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      content: '\2713'; //attention à ce caractère//
+      position: absolute;
+      top: -18px;
+      left: -12px;
+      font-size: 15px;
+      color: #000;
+      transition: all .2s; /* on prévoit une animation */
+    }
+    /* Aspect si "pas cochée" */
+    [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0; /* coche invisible */
+      transform: scale(0); /* mise à l'échelle à 0 */
+    }
+    /* Aspect si "cochée" */
+    [type="checkbox"]:checked + label:after {
+      opacity: 1; /* coche opaque */
+      transform: scale(1); /* mise à l'échelle 1:1 */
+    }
+  }
+
+  .choose{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .one{
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 30px;
+    color: black;
+  }
+
+  input[type=checkbox], input[type=radio] {
+    margin: 5px 0 0;
+    height: 20px;
+    width: 17px;
+    padding: 9px;
+  }
+
+  a.btn-paiement-r {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ef257e;
+    color: white;
+    display: block;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    font-family: "dinMedium";
+    padding-top: 21px;
+    outline: none;
+    transition: ease .4s;
+    float: right;
+    margin-top: 50px;
+  }
+
+  .form-content {
+    width: 48%;
+    display: inline-block;
+
+    label {
+      color: black;
+      font-size: 2.2rem;
+      text-align: left;
+      margin-top: 70px;
+    }
+
+    input {
+      border: 0;
+      box-shadow: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      border-radius: 0;
+      margin: 0 auto;
+      outline: none;
+      font-size: 2.2rem;
+    }
+  }
+
+  .compte .c-btn.mt{
+    float: right;
+  }
+}
+
+.form-content.full {
+  width: 600px;
+}
+
+.form-content.right {
+  float: right;
+}
+
+
+a.paiement-modale{
+float: right;
+  text-transform: uppercase;
+  font-family: "dinMedium";
+  background-color: #ef257e;
+  text-decoration: none;
+  transition: ease .4s;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 50px;
+  outline: none;
+  color: white;
+  display: block;
+  width: 260px;
+  height: 58px;
+}
+
+
+body .modale-body img.img-b-val {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  position: relative;
+  top: -10px;
+}
+
+.modale-invit img.validate {
+  position: relative;
+  top: 243px;
+  left: 53px;
+}
+
+
+
+
+
+
+
+
+
+
+
