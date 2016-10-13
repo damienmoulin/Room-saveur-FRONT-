@@ -12,24 +12,24 @@ var initMore = function () {
         if (isMore) {
             var verif = number + 1;
 
-            if(verif > 20){
+            if (verif > 20) {
                 $number.html(20);
-            }else{
+            } else {
                 $number.html(verif);
             }
         } else {
 
             var verif = number - 1;
-            if(verif < 0){
+            if (verif < 0) {
                 $number.html(0);
-            }else{
+            } else {
                 $number.html(verif);
             }
         }
     })
 }
 
-var initMenuScroll = function() {
+var initMenuScroll = function () {
     $(window).on('scroll', function () {
         var $header = $('.head');
         var lastScrollTop = 0;
@@ -38,7 +38,7 @@ var initMenuScroll = function() {
 
         var bock1 = $('.home-e-commerce').height() - 0;
 
-        console.log('b '+bock1);
+        console.log('b ' + bock1);
         console.log(s)
         // STICKY HEADER
         if (s > 50) {
@@ -52,13 +52,36 @@ var initMenuScroll = function() {
 }
 
 var initTabAccount = function () {
-    $('.check-span label').on('click', function(){
-        if($('.check-span input[type="checkbox"]').is(':checked')) {
+    $('.check-span label').on('click', function () {
+        if ($('.check-span input[type="checkbox"]').is(':checked')) {
             $('.facturation').addClass('hide');
-        }else{
+        } else {
             $('.facturation').removeClass('hide');
         }
     })
+}
+
+var initPanier = function () {
+
+    $('.icon-panier').on('click', function () {
+        $('.panier').removeClass('hide');
+        $('.c-panier').addClass('animated fadeInRight');
+
+        $('.panier').off('click').on('click', function(e) {
+
+            if($(e.target).hasClass('panier')){
+                $('.c-panier').removeClass('fadeInRight').addClass('fadeOutRight');
+
+                setTimeout(function(){
+                    $('.panier').addClass('hide');
+                    $('.c-panier').removeClass('fadeOutRight');
+                }, 800);
+            }else{
+                return false;
+            }
+        });
+    });
+
 }
 
 $(document).ready(function () {
@@ -69,20 +92,24 @@ $(document).ready(function () {
         initMore();
     }
 
-    if($('.home').length > 0){
+    if ($('.home').length > 0) {
         initMenuScroll();
     }
 
-    $('.arrow').on('click', function(){
+    $('.arrow').on('click', function () {
 
         var position = $('.service')[0].offsetTop - 80;
         $('html, body').animate({
             scrollTop: position
         }, 'slow');
     });
-    
-    if($('.compte').length > 0){
+
+    if ($('.compte').length > 0) {
         initTabAccount();
+    }
+
+    if ($('.panier').length > 0) {
+        initPanier();
     }
 
 });
