@@ -95,7 +95,7 @@
   }
 }
 
-.panier {
+.panier, .notifications {
   &:after {
     content: '';
     background-color: rgba(0, 0, 0, 0.76);
@@ -257,5 +257,17 @@
       color: $color2;
       background-color: #fff;
     }
+  }
+}
+
+.notifications {
+  table.table {
+    border-bottom: solid 1px #e4e4e4;
+  }
+
+  strong {
+    margin-bottom: 20px;
+    display:block;
+    margin-top:10px;
   }
 }
