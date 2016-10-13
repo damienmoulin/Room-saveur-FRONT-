@@ -117,6 +117,7 @@
   margin: 0 auto;
   text-align: center;
   display: block;
+	transition: ease .6s;
 
   &:hover{
  		background-color: $pink;

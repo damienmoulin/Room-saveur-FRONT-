@@ -34,6 +34,8 @@
 		border-radius: 5px;
 		margin: 0% 4% 0% 0%;
 		margin-bottom: 30px;
+		overflow: hidden;
+		vertical-align: top;
 
 		&:nth-child(3n+3){
 			margin: 0;
@@ -58,14 +60,17 @@
 			background-color: $grey-order;
 			height: 40px;
 			padding-top: 12px;
+			position: relative;
+			bottom: -1px;
 
 			a{
 				text-decoration: none;
 				color: white;
 				margin-left: 20px;
+				transition: ease .6s;
 
 				&:hover{
-					color: $dark-grey;
+					color: $gray-dusty;
 				}
 
 				i{
