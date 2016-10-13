@@ -11,7 +11,7 @@
 
 .connexion{
 	font-family: $dinLight;
-	padding: 0 80px;
+	padding: 70px 80px;
 
 
 	h5{
@@ -78,6 +78,18 @@
 		font-size: 25px;
 	}
 
+	a.mdp{
+		text-decoration: none;
+		font-size: 1.4rem;
+		float: right;
+		color: black;
+		margin-top: 10px;
+		cursor: pointer;
+		&:hover{
+			color: $pink;
+		}
+	}
+
 	.reseaux{
 		text-align: center;
 		margin-top: 30px;
@@ -87,6 +99,9 @@
 
 		a{
 			margin-left: 20px;
+			img{
+				width: 50px;	
+			}
 		}
 	}
 
