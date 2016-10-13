@@ -1,0 +1,55 @@
+.stat {
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 2.6rem;
+    color: #0584a4;
+    display: inline-block;
+
+    .fa {
+      font-size: 3rem;
+    }
+  }
+
+  .c-hidden {
+    height: 520px;
+    overflow: hidden;
+  }
+
+  .container-large {
+    padding: 0px;
+  }
+
+  .m-donut {
+    height:270px;
+  }
+
+  .content-white {
+    padding: 20px;
+  }
+
+  .c-btn {
+    display: block;
+    margin-top: 31px;
+    margin-left:40px;
+
+    .btn1 {
+      text-decoration: none;
+      background-color: #00a9a0;
+      color: white;
+      padding: 10px 35px;
+      font-size: 1.4rem;
+      margin-bottom: 35px;
+      width: initial;
+      transition: ease .6s;
+    }
+
+    .btn-suivant {
+      background-color: #09c9f3;
+    }
+
+    .btn-now {
+      background-color: #b85580;
+    }
+  }
+}

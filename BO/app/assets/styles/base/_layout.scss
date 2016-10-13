@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%
+}
+
+aside {
+  display: none;
+}
+
+.container {
+
+  &.overlay:after {
+    content: '';
+    width:100vw;
+    height:100vh;
+    background-color: rgba(22, 26, 29, 0.88);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.content {
+  padding-left: 108px;
+  padding-top: 105px;
+  padding-right: 20px;
+  background-color: #191f22;
+}
+
+.first-section {
+  background-color: #191f22;
+}
+
+.noShow {
+  display: none !important;
+}
+
+.isShow {
+  display: block !important;
+}
+
+//textes
+
+h2 {
+  color: $gray-thunder;
+  font-size: 1.7rem;
+  font-family: $popin;
+}
+
+
+h3 {
+  color: $gray-thunder;
+  font-size: 1.4rem;
+  font-family: $popin;
+}
+
+
+//buttons
