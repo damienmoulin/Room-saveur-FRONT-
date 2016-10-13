@@ -155,22 +155,73 @@ var initGraph = function() {
 
 
 var initMap = function () {
-    var styleArray = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.rail","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"saturation":"14"},{"hue":"#d6ff00"},{"lightness":"8"},{"gamma":"5.54"},{"weight":"6.03"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#59b4c0"},{"visibility":"on"}]}]
+    var styleArray = [{
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [{"color": "#444444"}]
+    }, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]}, {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [{"visibility": "off"}]
+    }, {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [{"saturation": -100}, {"lightness": 45}]
+    }, {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [{"visibility": "simplified"}]
+    }, {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [{"visibility": "off"}]
+    }, {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [{"visibility": "off"}]
+    }, {
+        "featureType": "transit.station.rail",
+        "elementType": "labels.text.fill",
+        "stylers": [{"visibility": "on"}, {"saturation": "14"}, {"hue": "#d6ff00"}, {"lightness": "8"}, {"gamma": "5.54"}, {"weight": "6.03"}]
+    }, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#59b4c0"}, {"visibility": "on"}]}]
+
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 48.856614, lng: 2.352222},
+        center: {lat: 48.881936, lng: 2.318906},
         scrollwheel: false,
         styles: styleArray,
-        panControl:true,
-        zoomControl:true,
-        mapTypeControl:false,
-        scaleControl:false,
-        streetViewControl:false,
-        overviewMapControl:false,
-        rotateControl:false,
+        panControl: true,
+        zoomControl: true,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        overviewMapControl: false,
+        rotateControl: false,
         zoom: 13
     });
+
+
+    var rooms = $('.droom');
+
+    console.log(rooms);
+
+    $.each(rooms, function (i, e) {
+
+        title = $(e).data('name');
+        lat = $(e).data('lat');
+        lng = $(e).data('lng');
+
+        room = {lat: lat, lng: lng};
+
+        marker = new google.maps.Marker({
+            position: room,
+            map: map,
+            title: 'Room Batignolles'
+        });
+    })
+
 }
+
 
 
 $(document).ready(function(){
