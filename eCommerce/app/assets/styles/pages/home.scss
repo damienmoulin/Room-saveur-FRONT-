@@ -1,23 +1,171 @@
 
-.home-e-commerce{
-	background: url(../img/bck-e-commerce.png);
-	width: 100%;
-	height: 660px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
-}
+.page-e-commerce{
 
-.home-e-commerce{
-	h1{
-		font-size: 5.5rem;
-		padding-top: 255px;
-		padding-left: 70px;
+	h2{
+		font-family: $dinMedium;
+		font-size: 3rem;
+		color: black;
+		margin: 0;
+		&:after{
+			content:'•••';
+			color: $orange;
+	    font-size: 20px;
+	    margin-left: 15px;
+	    letter-spacing: 5px;;
+		}
+	}	
+
+	a.btn-home{
+		text-transform: uppercase;
+		text-decoration: none;
+		background-color: $pink;
+		color: white;
+	  margin-top: 43px;
+	  display: block;
+	  width: 260px;
+	  height: 50px;
+	  text-align: center;
+	  font-family: $dinMedium;
+	  padding-top: 21px;
+
+	  &:hover{
+	  	background-color: $color1;
+	  }
 	}
 
-	p{
-		font-size: 2.4rem;
-		padding-left: 70px;
-		line-height: 30px;
+	.home-e-commerce{
+		background: url(../img/bck-e-commerce.png);
+		width: 100%;
+		height: 660px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: white;
+
+		.content-background{
+			padding-left: 70px;
+			padding-top: 255px;
+
+			h1{
+				font-size: 5.5rem;
+			} 
+
+			p{
+				font-size: 2.4rem;
+				line-height: 30px;
+				font-family: $helloMissThang;
+			}
+
+			a.arrow {
+	    	text-align: center;
+		    display: block;
+		    margin-top: 130px;
+				img{
+					width: 20px;
+				}
+	    }
+		}
+	}
+
+	.service{
+		padding: 50px;
+		.one-services{
+			display: inline-block;
+			text-align: center;
+			width: 33%;
+			margin-top: 50px;
+
+			.title-service{
+				text-transform: uppercase;;
+				font-weight: 600;
+				margin-top: 5px;
+			}
+
+			p{
+				width: 200px;
+	   	 	margin: 0 auto;
+	    	margin-top: 10px;
+			}
+		}
+
+		h3{
+			text-align: center;
+			color: black;
+			font-size: 2.8rem;
+			margin: 0;
+			margin-top: 100px;
+		}
+
+		a.btn-home{
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+	}
+
+	.actu{
+		padding: 50px;
+		.one-actu{	
+			width: 23%;
+			margin-right: 30px;
+			display: inline-block;
+			background-color: $grey-e;
+			font-size: 2rem;
+			margin-top: 50px;
+
+			&:last-child{
+				margin: 0;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			img{
+				width: 100%;
+			}
+
+			.texte-actu{
+				padding: 20px;
+				color: black;
+				
+				p{
+					margin: 0;
+					margin-top: 10px;
+					font-family: $dinLight;
+					line-height: 25px;
+				}
+			}
+
+			.section-texte{
+				background-color: $color1;
+				height: 300px;
+				color: white;
+				padding: 20px;
+
+				span{
+					font-size: 4.8rem;
+				}
+
+				p{
+					font-size: 2rem;
+					font-family: $dinLight;
+					margin-top: 10px;
+				}
+
+				.promo{
+					font-size: 2rem;
+					text-transform: uppercase;
+					font-weight: 600;
+					border: 1px solid white;
+					width: 95px;
+    			padding: 10px;
+				}
+
+				.alinea{
+					font-size: 1.2rem;
+					margin-top: 45px;
+				}
+			}
+
+		}
 	}
 }
