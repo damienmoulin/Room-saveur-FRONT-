@@ -1,0 +1,134 @@
+.modal-header.header-inscr {
+  border-bottom: none;
+
+	button.close {
+	  font-size: 50px;
+	  font-weight: 100;
+	  color: black;
+	  margin: 0;
+	}
+}
+
+.connexion{
+	font-family: $dinLight;
+	padding: 0 80px;
+
+
+	h5{
+		font-size: 4rem;
+		font-familly: $helloMissThang;
+		color: black;
+		padding: 0;
+		margin: 0;
+	}
+
+	p{
+		color: black;
+		font-size: 2.2rem;
+		text-align: center;
+	}
+
+	label{
+		color: black;
+		font-size: 2.2rem;
+		text-align: left;
+		margin-top: 70px;
+	}
+
+	input {
+		border: 0;
+		box-shadow: none;
+		border-bottom: 1px solid black;
+		width: 100%;
+		border-radius: 0;
+	  margin: 0 auto;
+	  outline: none;
+	  font-size: 2.2rem;
+	}
+
+	.btn-invit{
+		text-transform: uppercase;
+		text-decoration: none;
+		background-color: $pink;
+		color: white;
+		margin-top: 43px;
+		display: block;
+		width: 260px;
+		height: 50px;
+		text-align: center;
+		font-family: "dinMedium";
+		padding-top: 21px;
+		margin: 0 auto;
+		margin-top: 70px;
+
+		&:hover{
+			background-color: $color1;
+		}
+	}
+
+	.dots{
+		color: $orange;
+		text-align: center;
+		margin-top: 50px;
+		font-size: 25px;
+	}
+
+	.reseaux{
+		text-align: center;
+		margin-top: 30px;
+		p, a{
+			display: inline-block;
+		}
+
+		a{
+			margin-left: 20px;
+		}
+	}
+
+	a.inscription{
+		text-transform: uppercase;
+    font-family: "dinMedium";
+    background-color: $pink;
+    text-decoration: none;
+    transition: ease .4s;
+    text-align: center;
+    outline: none;
+    color: white;
+    width: 260px;
+    height: 58px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 26px;
+
+    &:hover{
+    	background-color: $color1;
+    }
+	}
+}
+
+.form-content.name{
+	width: 48%;
+	display: inline-block;
+}
+
+.form-content.nikname{
+	width: 48%;
+	display: inline-block;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
